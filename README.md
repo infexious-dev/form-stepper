@@ -1,3 +1,6 @@
+# Code from:
+https://github.com/M0kY/react-form-stepper
+
 # react-stepper
 Well-designed stepper component for react
 
