@@ -3,7 +3,7 @@ Well-designed stepper component for react
 
 ## Installation
 ```
-npm install react-stepper-horizontal --save
+npm install nfx-stepper-horizontal --save
 ```
 Then just add `import Stepper from 'react-stepper-horizontal';` into your file.
 
