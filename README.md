@@ -1,3 +1,6 @@
+# Customised, albeit outdated version of:
+https://github.com/M0kY/react-form-stepper
+
 # react-stepper
 Well-designed stepper component for react
 
