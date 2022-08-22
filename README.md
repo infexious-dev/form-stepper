@@ -1,4 +1,4 @@
-# Code from:
+# Customised, albeit outdated version of:
 https://github.com/M0kY/react-form-stepper
 
 # react-stepper
