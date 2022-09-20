@@ -9,6 +9,7 @@ export default class Step extends Component {
 
   getStyles() {
     const {
+      stepperBackground,
       activeColor, completeColor, defaultColor, circleFontColor,
       activeTitleColor, completeTitleColor, defaultTitleColor,
       size, circleFontSize, titleFontSize,
@@ -149,6 +150,7 @@ export default class Step extends Component {
 }
 
 Step.defaultProps = {
+  stepperBackground: 'transparent',
   activeColor: '#5096FF',
   completeColor: '#5096FF',
   defaultColor: '#E0E0E0',
@@ -170,6 +172,7 @@ Step.defaultProps = {
 };
 
 Step.propTypes = {
+  stepperBackground: PropTypes.string,
   width: PropTypes.number.isRequired,
   activeColor: PropTypes.string,
   completeColor: PropTypes.string,

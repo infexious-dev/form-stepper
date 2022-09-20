@@ -3,18 +3,8 @@ import { PropTypes } from 'prop-types';
 
 import Step from './Step';
 
-const styles = {
-  root: {
-    width: '100%',
-    minHeight: 0,
-    padding: 0,
-  },
-  stepper: {
-    display: 'flex'
-  },
-};
-
 function Stepper({
+  stepperBackground,
   activeStep, steps, disabledSteps,
   activeColor, completeColor, defaultColor, circleFontColor,
   activeTitleColor, completeTitleColor, defaultTitleColor,
@@ -24,6 +14,19 @@ function Stepper({
   defaultBorderColor, completeBorderColor, activeBorderColor, defaultBorderStyle,
   completeBorderStyle, activeBorderStyle, defaultBarColor, completeBarColor, lineMarginOffset, defaultBorderWidth
 }) {
+
+  const styles = {
+    root: {
+      width: '100%',
+      minHeight: 0,
+      padding: 0,
+    },
+    stepper: {
+      display: 'flex',
+      background: stepperBackground
+    },
+  };
+
   return (
     <div style={styles.root} className="stepper-root">
       <div style={styles.stepper} className="stepper">
@@ -82,6 +85,7 @@ Stepper.defaultProps = {
 };
 
 Stepper.propTypes = {
+  stepperBackground: PropTypes.string,
   activeStep: PropTypes.number,
   steps: PropTypes.array,
   activeColor: PropTypes.string,
