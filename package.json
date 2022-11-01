@@ -1,6 +1,6 @@
 {
   "name": "nfxs-form-stepper",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Form stepper control for forms",
   "main": "lib/index.js",
   "scripts": {
