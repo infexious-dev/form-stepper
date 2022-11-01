@@ -132,9 +132,9 @@ export default class Step extends Component {
       <div style={styles.step} className={`step ${active ? "active" : ""} ${completed ? "completed" : ""} ${disabled ? "disabled" : ""}`}>
         <div style={circleStyle} className="step-circle-outer" onClick={onClick}>
           {active || completed ? (
-            <a href={href} style={styles.index} onClick={onClick} className={`step-circle-inner`}>{stepContent}</a>
+            <a href={href} style={styles.index} className={`step-circle-inner`}>{stepContent}</a>
           ) : (
-            <span style={styles.index} className="step-circle-inner" onClick={onClick} >{stepContent}</span>
+            <span style={styles.index} className="step-circle-inner" >{stepContent}</span>
           )}
         </div>
         {active || completed ? (
